@@ -20,18 +20,6 @@ public class Product implements Sellable{
 		return name;
 	}
 
-	@Override
-	public boolean equals(Object obj) {
-		if(obj==null) {
-			return false;
-		}
-		try {
-			Product other = (Product) obj;
-			return Objects.equals(name, other.name);
-		} catch (Exception e) {
-			return false;
-		}
-	}
-
+	
 	
 }
